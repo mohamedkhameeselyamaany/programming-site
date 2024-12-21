@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng: Mohamed EI_Yamaany </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Programming Hub</h1>
+        <p>Explore the world of programming and learn the top languages</p> 
+       <p> Through the el yamaany website now </p> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Programming</h2>
+        <p>Programming is the process of creating instructions for computers to follow. It allows us to build software, websites, games, and more.</p>
+    </section>
+    <section id="languages">
+        <h2>Popular Programming Languages</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a language..." onkeyup="searchLanguage()">
+        </div>
+        <div class="languages">
+            <div class="language-card" data-name="Python">
+                <h3>Python</h3>
+                <p>Python is a versatile language used for web development, data science, artificial intelligence, and more.</p>
+            </div>
+            <div class="language-card" data-name="JavaScript">
+                <h3>JavaScript</h3>
+                <p>JavaScript is essential for creating interactive web applications and enhancing user experiences.</p>
+            </div>
+            <div class="language-card" data-name="Java">
+                <h3>Java</h3>
+                <p>Java is a robust language often used for enterprise-level applications and Android development.</p>
+            </div>
+            <div class="language-card" data-name="HTML">
+                <h3>HTML</h3>
+                <p>HTML (HyperText Markup Language) is the standard language used to create and design the structure of web pages. It defines the content and layout of the webpage.</p>
+            </div>
+            <div class="language-card" data-name="CSS">
+                <h3>CSS</h3>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the design elements like colors, fonts, and positioning of content.</p>
+            </div>
+            <div class="language-card" data-name="PHP">
+                <h3>PHP</h3>
+                <p>PHP is a server-side scripting language used to develop dynamic websites. It is often used for interacting with databases and creating custom web applications.</p>
+            </div>
+            <div class="language-card" data-name="jQuery">
+                <h3>jQuery</h3>
+                <p>jQuery is a JavaScript library that simplifies HTML document traversal, event handling, and animation. It makes it easier to write and manage JavaScript code.</p>
+                
+                </div>
+                <section class="explore-button">
+                    <button onclick="window.location.href='page2.html'">Explore More Languages</button>
+                </section>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions, feel free to reach out to us!</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>Email</h3>
+                <p><a href="https://www.facebook.com/mohamed.khameeseiyamaany?mibextid=ZbWKwL">this is our facebook page email</a></p>
+            </div>
+            <div class="info-item">
+                <h3>Phone</h3>
+                <p><a href="tel:01274664643">+01274664643</a></p>
+            </div>
+            <div class="info-item">
+                <h3>Address</h3>
+                <p>Mohamed Khamees, Street 13 ALshimaa, Country, Egypt, BeniSuef Governorate</p>
+            </div>
+        </div>
+
+        <h3>Contact Form</h3>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Programming Hub | Designed with passion </p>
+        <p>&copy; 2024 Eng Mohamed Khamees</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

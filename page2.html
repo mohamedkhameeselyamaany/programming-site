@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the top programming languages and tutorials to help you get started with programming.">
+    <meta name="keywords" content="programming, Python, JavaScript, HTML, CSS, tutorials, PHP, Java, C++, Ruby, Swift">
+    <title>Eng: Mohamed EI_Yamaany</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function searchLanguage() {
+            // الحصول على النص المدخل من المستخدم
+            var input = document.getElementById('search').value.toLowerCase();
+            
+            // الحصول على كل العناصر التي تحتوي على معلومات اللغة
+            var languages = document.getElementsByClassName('language-detail');
+            
+            // التكرار عبر كل اللغات وإخفاء أو إظهار حسب تطابق النص
+            for (var i = 0; i < languages.length; i++) {
+                var languageName = languages[i].getElementsByTagName('h3')[0].textContent.toLowerCase();
+                if (languageName.indexOf(input) > -1) {
+                    languages[i].style.display = '';
+                } else {
+                    languages[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Programming Hub</h1>
+        <p>Explore more about Programming and the best languages to learn!</p>
+        <p>Through the el yamaany website now</p>
+    </header> 
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#languages-details">Languages</a></li>
+            <li><a href="#video-tutorials">Tutorials</a></li>
+        </ul>
+    </nav>
+
+    <!-- قسم معلومات عن اللغات -->
+    <section id="languages-details">
+        <h2>Popular Programming Languages</h2>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for a language..." onkeyup="searchLanguage()">
+        </div>
+
+        <!-- إضافة لغات برمجة -->
+        <div class="language-detail">
+            <h3>Python</h3>
+            <p>Python is a versatile language used for web development, data science, machine learning, and automation. It's popular for its readability and ease of learning.</p>
+            <a href="https://www.python.org" target="_blank">Learn More about Python</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>JavaScript</h3>
+            <p>JavaScript is the most widely used language for web development. It allows developers to create interactive websites and web applications.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">Learn More about JavaScript</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>Java</h3>
+            <p>Java is a class-based, object-oriented programming language that is widely used for large-scale enterprise applications, Android development, and web applications.</p>
+            <a href="https://www.java.com/en/" target="_blank">Learn More about Java</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>HTML & CSS</h3>
+            <p>HTML defines the structure of web pages, while CSS is used for styling. Together, they are the foundation of web design.</p>
+            <a href="https://www.w3schools.com/html/" target="_blank">Learn More about HTML & CSS</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>PHP</h3>
+            <p>PHP is a server-side scripting language used in web development. It is widely used for dynamic website content and interacting with databases.</p>
+            <a href="https://www.php.net/" target="_blank">Learn More about PHP</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>jQuery</h3>
+            <p>jQuery is a lightweight, "write less, do more" JavaScript library. It makes it easier to manipulate HTML, CSS, and JavaScript in the browser.</p>
+            <a href="https://jquery.com/" target="_blank">Learn More about jQuery</a>
+        </div>
+
+        <!-- لغات إضافية -->
+        <div class="language-detail">
+            <h3>C++</h3>
+            <p>C++ is a general-purpose, high-performance programming language. It is widely used in system programming, game development, and applications requiring high performance.</p>
+            <a href="https://www.cplusplus.com/" target="_blank">Learn More about C++</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>Ruby</h3>
+            <p>Ruby is a dynamic, open-source programming language focused on simplicity and productivity. It is often used for web development and prototyping.</p>
+            <a href="https://www.ruby-lang.org/en/" target="_blank">Learn More about Ruby</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>Swift</h3>
+            <p>Swift is a powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS applications. It is known for its speed and safety features.</p>
+            <a href="https://developer.apple.com/swift/" target="_blank">Learn More about Swift</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>Go</h3>
+            <p>Go, also known as Golang, is a statically typed, compiled programming language designed at Google. It is known for its simplicity and efficiency in building scalable applications.</p>
+            <a href="https://golang.org/" target="_blank">Learn More about Go</a>
+        </div>
+
+        <div class="language-detail">
+            <h3>R</h3>
+            <p>R is a programming language and software environment used for statistical computing and data analysis. It is widely used by data scientists and statisticians.</p>
+            <a href="https://www.r-project.org/" target="_blank">Learn More about R</a>
+        </div>
+    </section>
+
+    <!-- قسم الفيديوهات -->
+    <section id="video-tutorials">
+        <h3>Programming Tutorials</h3>
+        <p>Explore some helpful video tutorials for learning programming languages.</p>
+        <div class="video-container">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="video-info">
+                    <h4>Learn Python for Beginners</h4>
+                    <p>Start your programming journey with Python! This tutorial will guide you step by step through the basics.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/hdI2bqOjy3c" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="video-info">
+                    <h4>JavaScript Basics - A Complete Guide</h4>
+                    <p>Learn the fundamentals of JavaScript and start building interactive websites with this easy-to-follow guide.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/Grn4mFvP7rk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="video-info">
+                    <h4>Introduction to HTML & CSS</h4>
+                    <p>Master the basics of web development by learning HTML and CSS, the building blocks of any website.</p>
+                </div>
+            </div>
+            <!-- فيديوهات إضافية -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/1Rs2Y9mA2M4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="video-info">
+                    <h4>C++ Programming for Beginners</h4>
+                    <p>Learn C++ from scratch and dive into more complex topics in programming with this tutorial.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/2JwAd9_KcCk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="video-info">
+                    <h4>Ruby Tutorial for Beginners</h4>
+                    <p>Explore the Ruby programming language and its features for building web applications.</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/pv5zY1sFShs" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="video-info">
+                    <h4>Learn Swift Programming for iOS Development</h4>
+                    <p>Start developing iOS apps with Swift and learn the fundamentals of Apple's programming language.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Programming Hub | Designed with passion</p>
+        <p>&copy; 2024 Eng Mohamed Khamees</p>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
+
+</body>
+
+</html>
